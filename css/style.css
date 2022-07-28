@@ -1,0 +1,135 @@
+/**********************font *************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/********************reset***************************/
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/***************assets************************/
+
+:root{
+    --color-primary:#e6eff6;
+    --color-secondary:#2bb3b1;
+    --color-darkgreen: #bfdf32;
+    --color-lightgreen: #bfd165; 
+    --font:'Karla', sans-serif;
+}
+body{
+    font-family: var(--font);
+    background-color:var(--color-primary);
+}
+.container {
+    max-width: 400px;
+    width: 85%;
+    padding: 70px 0px 70px 0px;
+    margin: 0 auto;
+}
+/*****************join part**************/
+.join {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 2% 2% 0 0;
+    line-height: 1.5;
+    padding: 30px 25px 30px 25px;
+    background-color: #ffffff;
+}
+.join h3 {
+    font-size: 23px;
+    color:#3cb7b4;
+}
+    .join p:nth-child(2) {
+        font-weight: bold;
+        font-size: 15px;
+        padding: 25px 0px 25px 0px;
+        color: var(--color-lightgreen);
+    }
+    .join p:nth-child(3) {
+        color: #b3b9c6;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    /*****************monthly part*********************/
+    .monthly {
+
+        padding: 25px 0px 25px 25px;
+        background-color: var(--color-secondary);
+        color: #ffffff;
+    }
+    .monthly h3 {
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .monthly div {
+        padding: 20px 0px 15px 0px ;
+    }
+    .monthly span {
+        position: relative;
+        bottom: 5px;
+        left: 9px;
+        font-weight: 400;
+        font-size: 17px;
+        color: #80ced2;
+    }
+    .monthly a {
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        width: 90%;
+        border-radius: 7px;
+        text-align: center;
+        padding: 17px 0px;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: var(--color-darkgreen);
+        display: inline-block;
+    }
+    .monthly p {
+        color: #aff7f9;
+        padding: 0px 0px 30px 0px;
+    }
+
+    /*******************whyus part*******************/
+
+    .why_us {
+        border-radius: 0px 0px 6px 6px;
+        padding: 15px 25px 25px 25px;
+        background-color: #4abebd;
+        color: #ffffff;
+    }
+    .why_us h3 {
+        line-height: 2.7;
+    }
+    .why_us ul {
+        color: #aff7f9;
+        line-height: 1.4;
+        list-style-type: none;
+    }
+    .why_us li {
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+    /*****************media query*******************/
+
+    @media (min-width:980px){
+        .container{
+         width: unset;
+         max-width: 750px;
+        }
+        .bottom {
+            display: flex;
+        }
+        .monthly ,.why_us {
+         width: 50%;
+         }
+         .monthly{
+            border-radius: 0px 0px 0px 6px;
+        }   
+         .why_us {
+            border-radius: 0px 0px 6px 0px;
+        } 
+        
+    }
